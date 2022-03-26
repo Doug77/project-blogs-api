@@ -14,7 +14,7 @@ Neste projeto foi arquitetado e desenvolvido uma API de um CRUD posts de blog (c
 
 ### Back-end:
  ```
-  Desenvolvido usando: Node.js, Sequelize, Joi.
+  Desenvolvido usando: Node.js, Sequelize, Joi, JWT.
  ```
 
 ## Instalando Dependências
