@@ -12,27 +12,23 @@ Neste projeto foi arquiteturado e desenvolvido uma API de um CRUD posts de blog 
 
 ## Técnologias usadas
 
-Front-end:
+Back-end:
 > Desenvolvido usando: Node.js, Sequelize, Joi.
 
 ## Instalando Dependências
 
-> Frontend
-```
-npm install
-``` 
+> Back-end
+  ```
+  npm install
+  ``` 
+ 
 ## Executando aplicação
 
-* Para rodar o front-end:
-
+* Para rodar o back-end:
   ```
+   npx sequelize db:migrate
+   
+   npx sequelize db:seed:all
+   
    npm start
-  ```
-
-## Executando Testes
-
-* Para rodar todos os testes:
-
-  ```
-    npm test
   ```
