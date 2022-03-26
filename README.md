@@ -11,15 +11,15 @@ Neste projeto foi arquitetado e desenvolvido uma API REST de um CRUD posts de bl
 
 ### Endpoints 
   ```
-    1 - Endpoint POST /user
-    2 - Endpoint POST /login
-    3 - Endpoint GET /user
-    4 - Endpoint GET /user/:id
-    5 - Endpoint POST /categories
-    6 - Endpoint GET /categories
-    7 - Endpoint POST /post
-    8 - Endpoint GET /post
-    9 - Endpoint GET post/:id
+    POST /user
+    POST /login
+    GET /user
+    GET /user/:id
+    POST /categories
+    GET /categories
+    POST /post
+    GET /post
+    GET post/:id
   ```
 
 ## Técnologias usadas
@@ -32,17 +32,40 @@ Neste projeto foi arquitetado e desenvolvido uma API REST de um CRUD posts de bl
 ## Instalando Dependências
 
 ### Back-end
-  ```
-  npm install
-  ``` 
+1. Entre no diretório do repositório e instale as dependências 
+  * `npm install`
+
+2. Crie o arquivo `.env` e adicione as variáves de ambiente
+  * `HOSTNAME=seu_host`
+
+  * `MYSQL_USER=seu_user_mysql`
+
+  * `MYSQL_PASSWORD=sua_senha`
+
+  * `JWT_SECRET=segredo_jwt`
+
+
+3. Certifique-se de ter o [MySQL](https://www.mysql.com/downloads/) instalado e em execução
  
+
 ## Executando aplicação
 
-* Para rodar o back-end:
+  1. Criando *banco de dados* 
   ```
-   npx sequelize db:migrate
-   
-   npx sequelize db:seed:all
-   
-   npm start
+    npx sequelize db:create
+  ```
+
+  2. Executando arquivos de *Migration*
+  ```
+    npx sequelize db:migrate
+  ```
+
+  3. Executando arquivos de *seeds*
+  ```
+    npx sequelize db:seed:all
+  ```
+
+  4. Iniciando API
+  ```
+    npm start
   ```
