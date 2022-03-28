@@ -2,7 +2,7 @@
 # Blogs API
 
 ## Descrição
-Neste projeto foi arquitetado e desenvolvido uma API REST de um CRUD posts de blog (com o Sequelize). Começando pela API, foi desenvolvido alguns endpoints (seguindo os princípios do REST) que estarão conectados ao seu banco de dados.
+Neste projeto foi arquitetado e desenvolvido uma API REST de um CRUD posts de blog (com o Sequelize). Começando pela API, foi desenvolvido alguns endpoints que estarão conectados ao seu banco de dados.
 
 
   > Para fazer um post é necessário usuário e login, portanto será trabalhada a relação entre user e post. 
