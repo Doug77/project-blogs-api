@@ -16,4 +16,6 @@ route.get('/:id', middlewares.validtoken, controllers.getPostById);
 
 route.put('/:id', middlewares.validtoken, middlewares.validate(schema.post));
 
+route.delete('/:id');
+
 module.exports = route;
